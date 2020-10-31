@@ -1,0 +1,3 @@
+[yourCollectionView setPagingEnabled:YES];
+collectionView.scrollToItemAtIndexPath(indexPath, atScrollPosition: .centeredHorizontally, animated: true)
+

@@ -15,6 +15,10 @@
 		5C3FBEDB254D332000C517AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C3FBED9254D332000C517AC /* LaunchScreen.storyboard */; };
 		5C3FBEE6254D332000C517AC /* UICollectionView001Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3FBEE5254D332000C517AC /* UICollectionView001Tests.swift */; };
 		5C3FBEF1254D332000C517AC /* UICollectionView001UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3FBEF0254D332000C517AC /* UICollectionView001UITests.swift */; };
+		5C3FBF09254D33CE00C517AC /* FullSizeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3FBF08254D33CE00C517AC /* FullSizeController.swift */; };
+		5C3FBF13254D34A500C517AC /* FullSizeCLTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3FBF12254D34A500C517AC /* FullSizeCLTCell.swift */; };
+		5C3FBF1C254D58E600C517AC /* StoryboardConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3FBF1B254D58E600C517AC /* StoryboardConfig.swift */; };
+		5CBAF625254D6B2F00EF155E /* Note.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5CBAF624254D6B2F00EF155E /* Note.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		5C3FBEEC254D332000C517AC /* UICollectionView001UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UICollectionView001UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C3FBEF0254D332000C517AC /* UICollectionView001UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionView001UITests.swift; sourceTree = "<group>"; };
 		5C3FBEF2254D332000C517AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C3FBF08254D33CE00C517AC /* FullSizeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullSizeController.swift; sourceTree = "<group>"; };
+		5C3FBF12254D34A500C517AC /* FullSizeCLTCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullSizeCLTCell.swift; sourceTree = "<group>"; };
+		5C3FBF1B254D58E600C517AC /* StoryboardConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardConfig.swift; sourceTree = "<group>"; };
+		5CBAF624254D6B2F00EF155E /* Note.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Note.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,9 @@
 		5C3FBECD254D331D00C517AC /* UICollectionView001 */ = {
 			isa = PBXGroup;
 			children = (
+				5CBAF624254D6B2F00EF155E /* Note.txt */,
+				5C3FBF17254D58C700C517AC /* Config */,
+				5C3FBF11254D347800C517AC /* View */,
 				5C3FBECE254D331D00C517AC /* AppDelegate.swift */,
 				5C3FBED0254D331D00C517AC /* SceneDelegate.swift */,
 				5C3FBED2254D331D00C517AC /* ViewController.swift */,
@@ -126,6 +137,39 @@
 				5C3FBEF2254D332000C517AC /* Info.plist */,
 			);
 			path = UICollectionView001UITests;
+			sourceTree = "<group>";
+		};
+		5C3FBF04254D338B00C517AC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5C3FBF08254D33CE00C517AC /* FullSizeController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5C3FBF10254D346C00C517AC /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				5C3FBF12254D34A500C517AC /* FullSizeCLTCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		5C3FBF11254D347800C517AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5C3FBF10254D346C00C517AC /* Cell */,
+				5C3FBF04254D338B00C517AC /* Controller */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5C3FBF17254D58C700C517AC /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				5C3FBF1B254D58E600C517AC /* StoryboardConfig.swift */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +275,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CBAF625254D6B2F00EF155E /* Note.txt in Resources */,
 				5C3FBEDB254D332000C517AC /* LaunchScreen.storyboard in Resources */,
 				5C3FBED8254D332000C517AC /* Assets.xcassets in Resources */,
 				5C3FBED6254D331D00C517AC /* Main.storyboard in Resources */,
@@ -258,8 +303,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C3FBF1C254D58E600C517AC /* StoryboardConfig.swift in Sources */,
 				5C3FBED3254D331D00C517AC /* ViewController.swift in Sources */,
+				5C3FBF09254D33CE00C517AC /* FullSizeController.swift in Sources */,
 				5C3FBECF254D331D00C517AC /* AppDelegate.swift in Sources */,
+				5C3FBF13254D34A500C517AC /* FullSizeCLTCell.swift in Sources */,
 				5C3FBED1254D331D00C517AC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,6 +486,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UICollectionView001/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -456,6 +505,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UICollectionView001/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
